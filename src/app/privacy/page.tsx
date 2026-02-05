@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const lastUpdated = "Sep 2024";
+const lastUpdated = "Feb 2025";
 
 export default function page() {
   return (
@@ -65,7 +65,7 @@ export default function page() {
         <p>
           If you have any questions, concerns, or just want to say hi, drop me
           an email at{" "}
-          <Link href="mailto:hello@tedawf.com">hello@tedawf.com</Link> or use
+          <Link href="mailto:jamesmosullivan1@yahoo.com">jamesmosullivan1@yahoo.com</Link> or use
           the <Link href="/contact">contact form</Link>. I&apos;d love to hear
           from you!
         </p>

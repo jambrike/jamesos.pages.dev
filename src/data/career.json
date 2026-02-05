@@ -1,56 +1,62 @@
 {
   "career": [
     {
-      "name": "DBS Bank",
-      "href": "https://www.dbs.com.sg",
-      "title": "Graduate Associate (SEED Programme)",
-      "logo": "/dbs.png",
-      "start": "Jul 2023",
+      "name": "Coakley Moloney Solicitors",
+      "href": "#",
+      "title": "Admin Assistant",
+      "logo": "/coakley-moloney.png",
+      "start": "Summer 2025",
       "description": [
-        "Developed the Java backend for a bank account servicing process with multiple channel integrations using Activiti workflow",
-        "Built a custom database migration tool using Python and MariaDB and facilitated the migration of 1000+ processes from a vendor platform"
+        "Filed documents and logged information for legal case management",
+        "Organized storage rooms and managed document delivery system",
+        "Handled file boxing and archival processes"
       ]
     },
     {
-      "name": "Singapore Institute of Technology",
-      "href": "https://www.singaporetech.edu.sg",
-      "title": "Software Developer (Contract)",
-      "logo": "/sit.png",
-      "start": "Apr 2023",
-      "end": "Jun 2023",
+      "name": "UCC Math Tutoring Programme",
+      "href": "https://www.ucc.ie",
+      "title": "Certified Mathematics Tutor",
+      "logo": "/ucc.png",
+      "start": "2025",
       "description": [
-        "Built NFTVue, a NFT gallery website that allows students to connect their crypto wallets to view and verify their school event-issued NFTs",
-        "Worked on DemoConstruct, a full-stack web application (React + Python) that uses Meshroom to reconstruct 3D models from captured images"
-      ],
-      "links": [
-        {
-          "name": "NFTVue",
-          "href": "https://nftvue.vercel.app",
-          "icon": "globe"
-        }
+        "Completed week-long course on key teaching skills and methodologies",
+        "Received honorable mentions in Mathematics Olympiads",
+        "Tutoring local Junior Certificate students in mathematics"
       ]
     },
     {
-      "name": "DBS Bank",
-      "href": "https://www.dbs.com.sg",
-      "title": "Software Developer (Intern)",
-      "logo": "/dbs.png",
-      "start": "May 2022",
-      "end": "Dec 2022",
+      "name": "Workvivo (Zoom)",
+      "href": "https://workvivo.com",
+      "title": "Work Experience - Web Development",
+      "logo": "/workvivo.png",
+      "start": "Jan 2025",
+      "end": "Jan 2025",
       "description": [
-        "Worked on the backend for the digital exchange and asset custody application using Spring Boot and Java",
-        "Built an admin dashboard web application for a DBS Metaverse event using Spring Security and Angular"
+        "Experienced web development at enterprise scale",
+        "Contributed to market research for social media platform features",
+        "Observed agile development workflows and team collaboration"
       ]
     },
     {
-      "name": "Activate Interactive Pte Ltd",
-      "href": "https://www.activate.sg",
-      "title": "Software Developer (Intern)",
-      "logo": "/activate.png",
-      "start": "May 2019",
-      "end": "Aug 2019",
+      "name": "Dunnes Stores",
+      "href": "https://www.dunnesstores.com",
+      "title": "Retail Assistant",
+      "logo": "/dunnes.png",
+      "start": "2024",
       "description": [
-        "Developed RP Connect, the iOS and Android mobile app for Republic Polytechnic using React Native"
+        "Stocked shelves and maintained display cases",
+        "Managed inventory movement from stock room to sales floor"
+      ]
+    },
+    {
+      "name": "Cork Penny Dinners",
+      "href": "https://corkpennydinners.ie",
+      "title": "Volunteer",
+      "logo": "/penny-dinners.png",
+      "start": "2024",
+      "description": [
+        "Volunteered for one week supporting community meal services",
+        "Cleaned facilities and prepared meals for those in need"
       ]
     }
   ]

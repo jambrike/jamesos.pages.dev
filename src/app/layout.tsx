@@ -18,8 +18,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Ted Thoughts",
-  description: "My personal site to showcase my developer work and opinions.",
+  title: "James O'Sullivan | Software Engineer",
+  description: "17-year-old software and mechatronics engineering student from Cork, Ireland. Showcasing projects in hardware integration, computer vision, and full-stack development.",
 };
 
 export default function RootLayout({

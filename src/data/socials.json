@@ -2,17 +2,22 @@
   "socials": [
     {
       "name": "LinkedIn",
-      "href": "https://linkedin.com/in/tedawf",
+      "href": "https://linkedin.com/in/jamesosullivan123",
       "icon": "linkedin"
     },
     {
       "name": "GitHub",
-      "href": "https://github.com/tedawf",
+      "href": "https://github.com/jambrike",
       "icon": "github"
     },
     {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/james_os08/",
+      "icon": "instagram"
+    },
+    {
       "name": "Email",
-      "href": "mailto:hello@tedawf.com",
+      "href": "mailto:jamesmosullivan1@yahoo.com",
       "icon": "mail"
     }
   ]
