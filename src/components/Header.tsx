@@ -12,8 +12,8 @@ const navLinks = [
     href: "/projects",
   },
   {
-    name: "blog",
-    href: "/blog",
+    name: "certificates",
+    href: "/mathematics",
   },
   {
     name: "contact",

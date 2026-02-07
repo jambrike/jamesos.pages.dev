@@ -1,11 +1,9 @@
 import Experience from "@/components/Experience";
 import LinkWithIcon from "@/components/LinkWithIcon";
-import Posts from "@/components/Posts";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import SwipeCards from "@/components/SwipeCards";
 import { Button } from "@/components/ui/Button";
-import { getPosts } from "@/lib/posts";
 import {
   ArrowDown,
   ArrowDownRight,
@@ -13,15 +11,11 @@ import {
   FileDown,
 } from "lucide-react";
 import Link from "next/link";
-import path from "path";
 
-const blogDirectory = path.join(process.cwd(), "content");
 const JAMES_BIRTH_YEAR = 2008;
 const LIMIT = 2; // max show 2
 
-export default async function Home() {
-  const posts = await getPosts(blogDirectory, LIMIT);
-
+export default function Home() {
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
@@ -78,15 +72,17 @@ export default async function Home() {
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-3xl">recent posts</h2>
+          <h2 className="title text-3xl">certificates</h2>
           <LinkWithIcon
-            href="/blog"
+            href="/mathematics"
             position="right"
             icon={<ArrowRightIcon className="size-5" />}
-            text="view more"
+            text="view all"
           />
         </div>
-        <Posts posts={posts} />
+        <p className="text-muted-foreground">
+          View my UCC Math Tutor certification and Mathematics Olympiad Honourable Mention.
+        </p>
       </section>
     </article>
   );

@@ -1,120 +1,81 @@
-import { getVectorStore } from "@/lib/vectordb";
-import { UpstashRedisCache } from "@langchain/community/caches/upstash_redis";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import {
-  ChatPromptTemplate,
-  MessagesPlaceholder,
-  PromptTemplate,
-} from "@langchain/core/prompts";
-import { ChatOpenAI } from "@langchain/openai";
-import { Redis } from "@upstash/redis";
-import { LangChainStream, Message, StreamingTextResponse } from "ai";
-import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
-import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";
-import { createRetrievalChain } from "langchain/chains/retrieval";
+import { OpenAIStream, StreamingTextResponse } from "ai";
+
+export const runtime = "edge";
+
+const OPENROUTER_API_KEY = "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";
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const messages = body.messages;
+    const { messages } = await req.json();
 
-    const latestMessage = messages[messages.length - 1].content;
+    const systemPrompt = {
+      role: "system",
+      content: `You are James Support, a friendly and professional chatbot for James O'Sullivan's personal portfolio website.
 
-    const { stream, handlers } = LangChainStream();
+About James:
+- 17-year-old aspiring software and mechatronics engineer from Cork, Ireland
+- Currently in 5th year at St. Francis College
+- Specializes in hardware integration, computer vision, and web development
 
-    // store the same user questions
-    const cache = new UpstashRedisCache({
-      client: Redis.fromEnv(),
+Experience:
+- Admin Assistant at Coakley Moloney Solicitors (Summer 2025)
+- UCC Certified Mathematics Tutor (2025) - teaches Junior Certificate students
+- Work Experience at Workvivo/Zoom in web development (Jan 2025)
+- Retail Assistant at Dunnes Stores
+- Volunteer at Cork Penny Dinners
+
+Projects:
+- Edith Glasses: Bone conduction glasses with 3D-printed casing and repurposed AirPods PCB for wireless audio
+- Red-light Green-light: Squid Game recreation using C++ computer vision on ESP32 with laser tag vest integration, built in 32-hour hackathon
+
+Achievements:
+- 7th place out of 90 participants at international IT engineering hackathon in Austria (sponsored by Dell and Microsoft)
+- Completed 10k Cork Marathon
+- Lifeguard & First Aid certified
+- UCC certified math tutor with honorable mentions in Mathematics Olympiads
+- Active member of Meitheal team at St. Francis College
+
+Contact:
+- Email: jamesmosullivan1@yahoo.com
+- LinkedIn: linkedin.com/in/jamesosullivan123
+- GitHub: github.com/jambrike
+- Instagram: instagram.com/james_os08/
+
+Answer questions in a professional but casual tone. Be concise and helpful. Format your messages in markdown.`,
+    };
+
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+        "HTTP-Referer": "https://jamesos.pages.dev",
+        "X-Title": "James O'Sullivan Portfolio",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "meta-llama/llama-3.3-70b-instruct:free",
+        messages: [systemPrompt, ...messages],
+        stream: true,
+        temperature: 0.7,
+      }),
     });
 
-    const chatModel = new ChatOpenAI({
-      model: "gpt-3.5-turbo-0125",
-      streaming: true,
-      callbacks: [handlers],
-      verbose: true, // logs to console
-      cache,
-      temperature: 0,
-    });
-
-    const rephraseModel = new ChatOpenAI({
-      model: "gpt-3.5-turbo-0125",
-      verbose: true,
-      cache,
-    });
-
-    const retriever = (await getVectorStore()).asRetriever();
-
-    // get a customised prompt based on chat history
-    const chatHistory = messages
-      .slice(0, -1) // ignore latest message
-      .map((msg: Message) =>
-        msg.role === "user"
-          ? new HumanMessage(msg.content)
-          : new AIMessage(msg.content),
+    if (!response.ok) {
+      const error = await response.text();
+      console.error("OpenRouter API error:", error);
+      return Response.json(
+        { error: "Failed to get response from chat service" },
+        { status: response.status }
       );
+    }
 
-    const rephrasePrompt = ChatPromptTemplate.fromMessages([
-      new MessagesPlaceholder("chat_history"),
-      ["user", "{input}"],
-      [
-        "user",
-        "Given the above conversation history, generate a search query to look up information relevant to the current question. " +
-          "Do not leave out any relevant keywords. " +
-          "Only return the query and no other text. ",
-      ],
-    ]);
-
-    const historyAwareRetrievalChain = await createHistoryAwareRetriever({
-      llm: rephraseModel,
-      retriever,
-      rephrasePrompt,
-    });
-
-    // final prompt
-    const prompt = ChatPromptTemplate.fromMessages([
-      [
-        "system",
-        "You are James Support, a friendly and professional chatbot for James O'Sullivan's personal portfolio website. " +
-          "You represent a 17-year-old aspiring software and mechatronics engineer from Cork, Ireland. " +
-          "Answer questions about James's experience, projects, skills, and achievements in a professional but casual tone. " +
-          "Highlight his hands-on experience with hardware integration, computer vision, web development, and hackathon participation. " +
-          "Mention his achievements: 7th place (out of 90) at international IT engineering hackathon in Austria (sponsored by Dell and Microsoft), " +
-          "completed 10k Cork Marathon, Lifeguard & First Aid certified, UCC certified math tutor, and active member of Meitheal team at St. Francis College. " +
-          "Be concise and provide relevant links to projects or contact information when appropriate. " +
-          "Format your messages in markdown.\n\n" +
-          "Context:\n{context}",
-      ],
-      new MessagesPlaceholder("chat_history"),
-      ["user", "{input}"],
-    ]);
-
-    const combineDocsChain = await createStuffDocumentsChain({
-      llm: chatModel,
-      prompt,
-      documentPrompt: PromptTemplate.fromTemplate(
-        "Page content:\n{page_content}",
-      ),
-      documentSeparator: "\n------\n",
-    });
-
-    // 1. retrievalChain converts the {input} into a vector
-    // 2. do a similarity search in the vector store and finds relevant documents
-    // 3. pairs the documents to createStuffDocumentsChain and put into {context}
-    // 4. send the updated prompt to chatgpt for a customised response
-
-    const retrievalChain = await createRetrievalChain({
-      combineDocsChain,
-      retriever: historyAwareRetrievalChain, // get the relevant documents based on chat history
-    });
-
-    retrievalChain.invoke({
-      input: latestMessage,
-      chat_history: chatHistory,
-    });
-
+    const stream = OpenAIStream(response);
     return new StreamingTextResponse(stream);
   } catch (error) {
-    console.error(error);
-    return Response.json({ error: "Internal server error" }, { status: 500 });
+    console.error("Chat API error:", error);
+    return Response.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
   }
 }
