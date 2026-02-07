@@ -1,4 +1,4 @@
-#My Personal Website
+# My Personal Website
 Its simple enough well not really
 The framework is next.js and react
 Chucked together from a friends one and well made bout me with some that tailwind css and radix ui
