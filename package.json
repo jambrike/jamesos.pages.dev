@@ -8,7 +8,8 @@
     "gen": "npx ts-node ./scripts/generate.ts",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prebuild": "rm -rf cache"
   },
   "dependencies": {
     "@datastax/astra-db-ts": "^1.4.1",
