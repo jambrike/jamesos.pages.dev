@@ -31,12 +31,12 @@ export default function Home() {
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-            An aspiring software and mechanical engineer with a passion for maths and problem-solving. Actively participating in hackathons and maths olympiad's across the world.
+            An aspiring software and mechanical engineer with a passion for maths and problem-solving. Actively participating in hackathons and maths olympiads across the world.
           </p>
 
           <div className="mt-6 flex items-center gap-1">
             <p className="text-balance text-sm font-semibold sm:text-base">
-              For Q&A, chat with James' Support Center
+              For Q&A, chat with James Support Center
             </p>
             <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
             <ArrowDown className="block size-5 animate-bounce sm:hidden" />
