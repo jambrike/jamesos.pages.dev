@@ -27,17 +27,16 @@ export default function Home() {
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            {new Date().getFullYear() - JAMES_BIRTH_YEAR}
-            yo software & mechatronics engineer from Ireland 🇮🇪
+            17yo software engineer from Ireland 🇮🇪
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-            Aspiring software and mechatronics engineer with hands-on experience in hardware integration, computer vision, and web development. Active in hackathons, engineering competitions, and building innovative projects that merge software with real-world applications.
+            An aspiring software and mechanical engineer with a passion for maths and problem-solving. Actively participating in hackathons and maths olympiad's across the world.
           </p>
 
           <div className="mt-6 flex items-center gap-1">
             <p className="text-balance text-sm font-semibold sm:text-base">
-              For Q&A, chat with James Support
+              For Q&A, chat with James' Support Center
             </p>
             <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
             <ArrowDown className="block size-5 animate-bounce sm:hidden" />
