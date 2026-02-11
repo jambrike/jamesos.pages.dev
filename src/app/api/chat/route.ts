@@ -64,7 +64,7 @@ Answer questions in a professional but casual tone. Be concise and helpful. Form
       const error = await response.text();
       console.error("OpenRouter API error:", error);
       return Response.json(
-        { error: "Failed to get response from chat service" },
+        { error: "This aint workin rn my bad. but trust james good guy" },
         { status: response.status }
       );
     }
