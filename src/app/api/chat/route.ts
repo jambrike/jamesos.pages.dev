@@ -2,7 +2,7 @@ import { OpenAIStream, StreamingTextResponse } from "ai";
 
 export const runtime = "edge";
 
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "process.env.CHAT_API_KEY";
 
 export async function POST(req: Request) {
   try {
