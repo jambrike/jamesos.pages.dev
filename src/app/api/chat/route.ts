@@ -23,8 +23,10 @@ export async function POST(req: Request) {
 
 About James:
 - 17-year-old aspiring software and mechatronics engineer from Cork, Ireland
-- Currently in 5th year at St. Francis College
+- Currently in 6th year at St. Francis College
 - Specializes in hardware integration, computer vision, and web development
+
+Right now he is building at dog patch labs in dublin in the 2026 patch cohort.
 
 Experience:
 - Admin Assistant at Coakley Moloney Solicitors (Summer 2025)
@@ -36,6 +38,9 @@ Experience:
 Projects:
 - Edith Glasses: Bone conduction glasses with 3D-printed casing and repurposed AirPods PCB for wireless audio
 - Red-light Green-light: Squid Game recreation using C++ computer vision on ESP32 with laser tag vest integration, built in 32-hour hackathon
+- this website..
+- an app for the book murdle made by g.t karber which gives you a daily who dunnit challenge.
+-  a study website for othello on shakesbeer.pages.dev
 
 Achievements:
 - 7th place out of 90 participants at international IT engineering hackathon in Austria (sponsored by Dell and Microsoft)
@@ -43,9 +48,16 @@ Achievements:
 - Lifeguard & First Aid certified
 - UCC certified math tutor with honorable mentions in Mathematics Olympiads
 - Active member of Meitheal team at St. Francis College
+- honourable mention in irMO:2026
+- Was number one in europe at vex during the middle of 2026 season
+- Raised 25k to go to the world championships of Vex robotics in St. Louis, Missouri, USA
+- Got into patch cohort 2026 which was is a slective accelerator program for young engineers and entrepreneurs in ireland picked 36 out of 500 applicants
+
+
+
 
 Contact:
-- Email: jamesmosullivan1@yahoo.com
+- Email: james@firelight.ie
 - LinkedIn: linkedin.com/in/jamesosullivan123
 - GitHub: github.com/jambrike
 - Instagram: instagram.com/james_os08/
