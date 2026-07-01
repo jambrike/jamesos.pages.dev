@@ -118,6 +118,6 @@ type Card = {
 const cardData: Card[] = [
   {
     id: 1,
-    url: "/profile.png",
+    url: "/profile.jpg",
   },
 ];

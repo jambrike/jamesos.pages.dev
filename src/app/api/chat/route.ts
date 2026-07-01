@@ -2,10 +2,19 @@ import { OpenAIStream, StreamingTextResponse } from "ai";
 
 export const runtime = "edge";
 
-const OPENROUTER_API_KEY = "process.env.CHAT_API_KEY";
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 export async function POST(req: Request) {
   try {
+    const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+
+    if (!OPENROUTER_API_KEY) {
+      return Response.json(
+        { error: "OpenRouter API key is not configured" },
+        { status: 500 },
+      );
+    }
+
     const { messages } = await req.json();
 
     const systemPrompt = {
