@@ -3,14 +3,18 @@
     {
       "name": "St. Francis College",
       "href": "https://www.stfranciscollege.ie",
-      "title": "Secondary School Student (5th Year)",
+      "title": "Secondary School Student (6th Year)",
       "logo": "/st-francis.png",
       "start": "2020",
       "end": "Present",
       "description": [
-        "Currently in 5th year, preparing for Leaving Certificate",
+        "Currently in 6th year, preparing for Leaving Certificate",
         "Completed Junior Certificate",
-        "Member of Meitheal team - organized activities and presentations for first-year students"
+        "Member of Meitheal team - organized activities and presentations for first-year students",
+        "2nd place in Munster Schools Tennis Championship",
+        "1st place in Munster Schools Badminton Championship",
+        "Vex Robotics Team - participated in regional competitions and qualifed for world championship in St. Louis, USA",
+        "Mentoring future robotics students"
       ]
     }
   ]
