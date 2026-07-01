@@ -62,7 +62,7 @@ Answer questions in a professional but casual tone. Be concise and helpful. Form
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "meta-llama/llama-3.3-70b-instruct:free",
+        model: "nvidia/nemotron-3-ultra-550b-a55b:free",
         messages: [systemPrompt, ...messages],
         stream: true,
         temperature: 0.7,
