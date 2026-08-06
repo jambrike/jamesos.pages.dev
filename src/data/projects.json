@@ -5,6 +5,7 @@
       "href": "https://heronlabs.ie",
       "featured": true,
       "description": "**Problem.** Fixed sampling locations leave gaps in our picture of changing river conditions.\n\n**Solution.** Agami is a semi-autonomous surface vessel that collects GPS-tagged nitrate, conductivity, turbidity and temperature measurements while travelling through waterways.\n\n**My contribution.** I co-founded Heron Labs and led major parts of Agami's technical development: the analogue and embedded sensing stack, ESP32 firmware, LTE/GNSS telemetry, GPS navigation, web-based monitoring, electronics integration and iterative field testing.",
+      "video": "/heron-demo.m4v",
       "image": "/heron-agami.webp",
       "tags": [
         "Robotics",

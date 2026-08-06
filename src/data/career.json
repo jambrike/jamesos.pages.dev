@@ -8,9 +8,8 @@
       "start": "June 2026",
       "description": [
         "Co-founded an environmental robotics startup during Patch at Dogpatch Labs, developing Agami, a semi-autonomous river-monitoring vessel.",
-        "Designed and integrated the electronics, embedded software and sensing stack for nitrate, conductivity, turbidity, temperature and GPS-tagged data acquisition.",
-        "Built LTE/GNSS telemetry, GPS navigation and web-based monitoring systems linking the robot to live position and sensor data.",
-        "Took subsystems from circuit and firmware design through physical integration, real-water testing, failure diagnosis and rapid iteration."
+        "Led the electronics, embedded software and sensing stack for nitrate, conductivity, turbidity, temperature and GPS-tagged measurements.",
+        "Built LTE/GNSS telemetry, GPS navigation and web monitoring, taking subsystems from prototype integration through real-water testing and iteration."
       ],
       "links": [
         {

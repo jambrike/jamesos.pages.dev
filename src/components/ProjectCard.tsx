@@ -18,11 +18,23 @@ interface Props {
 }
 
 export function ProjectCard({ project }: Props) {
-  const { name, href, description, image, featured, tags, links } = project;
+  const { name, href, description, image, video, featured, tags, links } =
+    project;
 
   return (
     <Card className={cn("flex flex-col", featured && "sm:col-span-2")}>
-      <CardHeader>
+      <CardHeader className={cn(video && image && "space-y-3")}>
+        {video && (
+          <video
+            className="aspect-video w-full bg-zinc-950 object-contain"
+            controls
+            playsInline
+            preload="metadata"
+          >
+            <source src={video} type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+        )}
         {image && (
           <Link href={href || image}>
             <Image
