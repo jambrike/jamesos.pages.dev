@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/Card";
 import { Project } from "@/lib/schemas";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -17,10 +18,10 @@ interface Props {
 }
 
 export function ProjectCard({ project }: Props) {
-  const { name, href, description, image, tags, links } = project;
+  const { name, href, description, image, featured, tags, links } = project;
 
   return (
-    <Card className="flex flex-col">
+    <Card className={cn("flex flex-col", featured && "sm:col-span-2")}>
       <CardHeader>
         {image && (
           <Link href={href || image}>
@@ -29,7 +30,10 @@ export function ProjectCard({ project }: Props) {
               alt={name}
               width={500}
               height={300}
-              className="h-40 w-full object-cover object-top"
+              className={cn(
+                "h-40 w-full object-cover object-top",
+                featured && "bg-zinc-950 object-contain sm:h-72",
+              )}
             />
           </Link>
         )}

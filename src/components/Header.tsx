@@ -24,7 +24,7 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/75 backdrop-blur-sm">
-      <div className="mx-auto max-w-3xl px-8 py-6">
+      <div className="mx-auto max-w-3xl px-4 py-6 sm:px-8">
         <nav className="flex items-center justify-between">
           <ul className="flex gap-4 sm:gap-8">
             {navLinks.map((nav, id) => (
