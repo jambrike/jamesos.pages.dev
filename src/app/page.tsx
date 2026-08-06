@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 
 const JAMES_BIRTH_YEAR = 2008;
-const LIMIT = 2; // max show 2
+const LIMIT = 3; // featured project plus two supporting projects
 
 export default function Home() {
   return (
