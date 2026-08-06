@@ -80,7 +80,7 @@ export default function Home() {
           />
         </div>
         <p className="text-muted-foreground">
-          View my UCC Math Tutor certification and Mathematics Olympiad Honourable Mention.
+          View my UCC Math Tutor certification and Irish Mathematical Olympiad honours.
         </p>
       </section>
     </article>
