@@ -20,6 +20,24 @@
       ]
     },
     {
+      "name": "Patch",
+      "href": "https://www.joinpatch.org/",
+      "title": "Participant — Summer Accelerator",
+      "logo": "/patch-logo.svg",
+      "start": "June 2026",
+      "description": [
+        "Selected for Patch's summer accelerator for young technologists, scientists and entrepreneurs in Ireland.",
+        "Developed Heron Labs and Agami through focused building, expert mentorship, workshops and feedback from an ambitious peer community."
+      ],
+      "links": [
+        {
+          "name": "Patch",
+          "href": "https://www.joinpatch.org/",
+          "icon": "external-link"
+        }
+      ]
+    },
+    {
       "name": "Coakley Moloney Solicitors",
       "href": "#",
       "title": "Admin Assistant",
@@ -60,10 +78,9 @@
     {
       "name": "Dunnes Stores",
       "href": "https://www.dunnesstores.com",
-      "title": "Retail Assistant",
+      "title": "Work Experience — Retail Assistant",
       "logo": "/dunnes.png",
-      "start": "2024",
-      "end": "2024",
+      "start": "Two weeks in 2024",
       "description": [
         "Stocked shelves and maintained display cases",
         "Managed inventory movement from stock room to sales floor"
