@@ -20,6 +20,9 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "James O'Sullivan | Software Engineer",
   description: "17-year-old software and mechatronics engineering student from Cork, Ireland. Showcasing projects in hardware integration, computer vision, and full-stack development.",
+  verification: {
+    google: "YwE7xpfkL1QTnj1GM3sOy6hVFZHOjhB-FKwgWTkuUko",
+  },
 };
 
 export default function RootLayout({
