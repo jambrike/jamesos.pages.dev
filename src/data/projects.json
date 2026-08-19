@@ -6,66 +6,87 @@
       "featured": true,
       "description": "**Problem.** Fixed sampling locations leave gaps in our picture of changing river conditions.\n\n**Solution.** Agami is a semi-autonomous surface vessel that collects GPS-tagged nitrate, conductivity, turbidity and temperature measurements while travelling through waterways.\n\n**My contribution.** I co-founded Heron Labs and led major parts of Agami's technical development: the analogue and embedded sensing stack, ESP32 firmware, LTE/GNSS telemetry, GPS navigation, web-based monitoring, electronics integration and iterative field testing.",
       "video": "/heron-demo.m4v",
+      "model": "/agami.glb",
       "image": "/heron-agami.webp",
-      "tags": [
-        "Robotics",
-        "Embedded C++",
-        "ESP32",
-        "Analogue Electronics",
-        "Environmental Sensors",
-        "LTE/4G",
-        "GPS/GNSS",
-        "Autonomous Navigation",
-        "Telemetry",
-        "Systems Engineering",
-        "Field Testing"
-      ],
+      "tags": ["Robotics", "Embedded C++", "ESP32", "Analogue Electronics", "Environmental Sensors", "LTE/4G", "GPS/GNSS", "Autonomous Navigation", "Telemetry", "Systems Engineering", "Field Testing"],
+      "links": [{ "name": "Project website", "href": "https://heronlabs.ie", "icon": "external-link" }]
+    },
+    {
+      "name": "VEX Robotics",
+      "description": "Worked on a competition robot with the VEX Robotics team, helping us reach a peak ranking of #1 in Europe during the 2026 season. We went to the World Championship in St. Louis after raising the money through sponsorships and even speaking on 96FM.",
+      "image": "/vex-robot.png",
+      "tags": ["Robotics", "C++", "CAD", "Electronics", "Mechanical Design", "Teamwork"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike", "icon": "github" }]
+    },
+    {
+      "name": "Firelight",
+      "href": "https://firelight.ie",
+      "description": "An educational platform for robotics, built while working at DogPatch Labs, with the aim of making robotics more accessible to students.",
+      "video": "/firelight-demo.m4v",
+      "tags": ["Robotics", "Education", "TypeScript", "Web Development"],
       "links": [
-        {
-          "name": "Project website",
-          "href": "https://heronlabs.ie",
-          "icon": "external-link"
-        }
+        { "name": "Firelight", "href": "https://firelight.ie", "icon": "external-link" },
+        { "name": "GitHub", "href": "https://github.com/jambrike/firelight", "icon": "github" }
       ]
+    },
+    {
+      "name": "Grandson AI",
+      "description": "An AI assistant designed to help grandparents use their laptops without needing someone else to guide them through every step.",
+      "image": "/grandson-ai.png",
+      "tags": ["AI", "Python", "Accessibility", "Assistive Technology"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/Grandson", "icon": "github" }]
     },
     {
       "name": "Edith Glasses",
       "description": "Bone conduction glasses merging hearing aid functionality with wireless audio. 3D-printed custom casing integrating PCB from repurposed AirPods for seamless audio experience.",
       "image": "/edith-glasses.png",
-      "tags": [
-        "Hardware",
-        "3D Printing",
-        "Audio Engineering",
-        "PCB Integration",
-        "Accessibility Tech"
-      ],
-      "links": [
-        {
-          "name": "GitHub",
-          "href": "https://github.com/jambrike/Silia-Glasses",
-          "icon": "github"
-        }
-      ]
+      "tags": ["Hardware", "3D Printing", "Audio Engineering", "PCB Integration", "Accessibility Tech"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/Silia-Glasses", "icon": "github" }]
     },
     {
       "name": "Red-light Green-light",
       "description": "Real-life recreation of the Squid Game challenge using computer vision. Revised C++ vision training model to run on ESP32, tracking player movement during 'red light' phases. Integrated with custom laser tag vest that activates when motion is detected. Built in 32-hour hackathon.",
       "image": "/redlight-greenlight.png",
-      "tags": [
-        "C++",
-        "Computer Vision",
-        "ESP32",
-        "IoT",
-        "Real-time Processing",
-        "Hardware Integration"
-      ],
+      "tags": ["C++", "Computer Vision", "ESP32", "IoT", "Real-time Processing", "Hardware Integration"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/green-red", "icon": "github" }]
+    },
+    {
+      "name": "Murdle App",
+      "description": "A daily whodunit challenge app inspired by Murdle by G. T. Karber.",
+      "image": "/murdle.png",
+      "tags": ["App Development", "Puzzles", "Web Development"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/Murdle-APP-VERSION", "icon": "github" }]
+    },
+    {
+      "name": "Cluero",
+      "description": "My second coding project: a remake of Cluedo with custom rules and a fresh take on the classic deduction game.",
+      "video": "/cluero-demo.m4v",
+      "tags": ["JavaScript", "Game Development", "Game Design"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/Cluero", "icon": "github" }]
+    },
+    {
+      "name": "Othello Study Notes",
+      "description": "A study website for Othello, with notes and revision resources for Leaving Certificate English.",
+      "image": "/othello-study.png",
+      "tags": ["HTML", "Web Development", "Shakespeare"],
       "links": [
-        {
-          "name": "GitHub",
-          "href": "https://github.com/jambrike/green-red",
-          "icon": "github"
-        }
+        { "name": "Website", "href": "https://shakesbeer.pages.dev", "icon": "external-link" },
+        { "name": "GitHub", "href": "https://github.com/jambrike/shakes-beer", "icon": "github" }
       ]
+    },
+    {
+      "name": "James O'Sullivan Portfolio",
+      "description": "This website: a personal portfolio built to showcase projects, experience, certificates and a custom chatbot about me.",
+      "image": "/portfolio-screenshot.png",
+      "tags": ["Next.js", "React", "TypeScript", "AI", "Web Development"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/jamesos.pages.dev", "icon": "github" }]
+    },
+    {
+      "name": "MIDNIGHT",
+      "description": "My first Hack Club project and my first coding project.",
+      "video": "/midnight-demo.m4v",
+      "tags": ["HTML", "Hack Club", "First Project"],
+      "links": [{ "name": "GitHub", "href": "https://github.com/jambrike/MIDNIGHT", "icon": "github" }]
     }
   ]
 }

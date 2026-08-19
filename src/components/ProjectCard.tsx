@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/Badge";
 import {
   Card,
@@ -8,6 +10,7 @@ import {
 } from "@/components/ui/Card";
 import { Project } from "@/lib/schemas";
 import { cn } from "@/lib/utils";
+import { createElement, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -17,19 +20,45 @@ interface Props {
   project: Project;
 }
 
+function InteractiveModel({ model, name }: { model: string; name: string }) {
+  useEffect(() => {
+    import("@google/model-viewer");
+  }, []);
+
+  return createElement("model-viewer", {
+    src: model,
+    "camera-controls": true,
+    "auto-rotate": true,
+    "shadow-intensity": "1",
+    "interaction-prompt": "none",
+    "camera-orbit": "0deg 75deg 2.5m",
+    "min-camera-orbit": "auto auto 1m",
+    "max-camera-orbit": "auto auto 5m",
+    "aria-label": `${name} interactive 3D model`,
+    style: { height: "18rem", width: "100%", background: "#09090b" },
+  });
+}
+
 export function ProjectCard({ project }: Props) {
-  const { name, href, description, image, video, featured, tags, links } =
+  const { name, href, description, image, video, model, featured, tags, links } =
     project;
 
   return (
     <Card className={cn("flex flex-col", featured && "sm:col-span-2")}>
       <CardHeader className={cn(video && image && "space-y-3")}>
+        {model && <InteractiveModel model={model} name={name} />}
         {video && (
           <video
             className="aspect-video w-full bg-zinc-950 object-contain"
             controls
+            autoPlay
+            muted
             playsInline
             preload="metadata"
+            onEnded={(event) => {
+              event.currentTarget.currentTime = 0;
+              event.currentTarget.pause();
+            }}
           >
             <source src={video} type="video/mp4" />
             Your browser does not support embedded video.

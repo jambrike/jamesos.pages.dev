@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@datastax/astra-db-ts": "^1.4.1",
+    "@google/model-viewer": "^4.3.1",
     "@hookform/resolvers": "^3.9.0",
     "@langchain/community": "^0.3.1",
     "@langchain/core": "^0.3.2",
@@ -24,7 +25,7 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.0",
-    "@upstash/redis": "^1.34.0",
+    "@upstash/redis": "^1.38.2",
     "ai": "^3.3.35",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -46,6 +47,7 @@
     "sugar-high": "^0.7.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.185.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {

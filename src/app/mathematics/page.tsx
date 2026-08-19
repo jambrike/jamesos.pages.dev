@@ -39,6 +39,22 @@ export default function CertificatesPage() {
           </p>
         </div>
 
+        {/* RLSS UK Level 3 Pool Lifeguarding */}
+        <div className="flex flex-col gap-4">
+          <div className="overflow-hidden rounded-lg border bg-card">
+            <Image
+              src="/lifeguard-certificate.png"
+              alt="RLSS UK Level 3 Award in Pool Lifeguarding certificate awarded to James O'Sullivan"
+              width={2328}
+              height={1328}
+              className="h-auto w-full"
+            />
+          </div>
+          <p className="text-center text-lg font-medium text-muted-foreground">
+            RLSS UK Level 3 Award in Pool Lifeguarding
+          </p>
+        </div>
+
         {/* UCC Cert 2 - Honourable Mention */}
         <div className="flex flex-col gap-4">
           <div className="overflow-hidden rounded-lg border bg-card">

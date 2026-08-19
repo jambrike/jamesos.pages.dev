@@ -4,12 +4,11 @@
       "name": "Heron Labs",
       "href": "https://heronlabs.ie",
       "title": "Co-Founder & Engineer",
-      "logo": "/heron-labs-logo.png",
+      "logo": "/heron-labs-heron.png",
       "start": "June 2026",
       "description": [
-        "Co-founded an environmental robotics startup during Patch at Dogpatch Labs, developing Agami, a semi-autonomous river-monitoring vessel.",
-        "Led the electronics, embedded software and sensing stack for nitrate, conductivity, turbidity, temperature and GPS-tagged measurements.",
-        "Built LTE/GNSS telemetry, GPS navigation and web monitoring, taking subsystems from prototype integration through real-water testing and iteration."
+        "Co-founded Heron Labs during Patch, building Agami, a semi-autonomous river-monitoring vessel.",
+        "Led the electronics, embedded software and sensing systems, including ESP32 firmware, environmental sensors, LTE/GNSS telemetry and GPS navigation."
       ],
       "links": [
         {
@@ -26,8 +25,8 @@
       "logo": "/patch-logo.svg",
       "start": "June 2026",
       "description": [
-        "Selected for Patch's summer accelerator for young technologists, scientists and entrepreneurs in Ireland.",
-        "Developed Heron Labs and Agami through focused building, expert mentorship, workshops and feedback from an ambitious peer community."
+        "Selected for Patch's summer accelerator, a two-month programme for 36 young technologists, scientists and entrepreneurs aged 16–23.",
+        "Lived and worked in Dublin through focused building, expert mentorship, workshops, talks and feedback from an ambitious peer community, while developing a startup project."
       ],
       "links": [
         {
@@ -41,7 +40,7 @@
       "name": "Coakley Moloney Solicitors",
       "href": "#",
       "title": "Admin Assistant",
-      "logo": "/coakley-moloney.png",
+      "logo": "/coakley-moloney.ico",
       "start": "Summer 2025",
       "end": "5th year secondary school",
       "description": [
@@ -54,7 +53,7 @@
       "name": "UCC Math Tutoring Programme",
       "href": "https://www.ucc.ie",
       "title": "Certified Mathematics Tutor",
-      "logo": "/ucc.png",
+      "logo": "/ucc-logo.svg",
       "start": "2025",
       "description": [
         "Completed week-long course on key teaching skills and methodologies",
@@ -66,7 +65,7 @@
       "name": "Workvivo (Zoom)",
       "href": "https://workvivo.com",
       "title": "Work Experience - Web Development",
-      "logo": "/workvivo.png",
+      "logo": "/workvivo.ico",
       "start": "Jan 2025",
       "end": "Jan 2025",
       "description": [
@@ -79,7 +78,7 @@
       "name": "Dunnes Stores",
       "href": "https://www.dunnesstores.com",
       "title": "Work Experience — Retail Assistant",
-      "logo": "/dunnes.png",
+      "logo": "/dunnes.ico",
       "start": "Two weeks in 2024",
       "description": [
         "Stocked shelves and maintained display cases",
@@ -90,7 +89,7 @@
       "name": "Cork Penny Dinners",
       "href": "https://corkpennydinners.ie",
       "title": "Volunteer",
-      "logo": "/penny-dinners.png",
+      "logo": "/penny-dinners.jpg",
       "start": "1 week in 2024",
       "end": ":)",
       "description": [
