@@ -1,7 +1,5 @@
 import { OpenAIStream, StreamingTextResponse } from "ai";
 
-export const runtime = "edge";
-
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 export async function POST(req: Request) {

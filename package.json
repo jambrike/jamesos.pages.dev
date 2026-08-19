@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
     "gen": "npx ts-node ./scripts/generate.ts",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "prebuild": "rm -rf cache"
+    "prebuild": "rm -rf cache",
+    "preview": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@datastax/astra-db-ts": "^1.4.1",
@@ -18,6 +22,7 @@
     "@langchain/community": "^0.3.1",
     "@langchain/core": "^0.3.2",
     "@langchain/openai": "^0.3.0",
+    "@opennextjs/cloudflare": "^1.20.2",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.14",
     "@radix-ui/react-avatar": "^1.1.0",
@@ -34,7 +39,7 @@
     "gray-matter": "^4.0.3",
     "langchain": "^0.3.2",
     "lucide-react": "^0.441.0",
-    "next": "^14.2.12",
+    "next": "^14.2.35",
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.3.0",
     "openai": "^4.61.1",
@@ -62,7 +67,8 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.124.0"
   },
   "resolutions": {
     "@langchain/core": "0.3.1"
