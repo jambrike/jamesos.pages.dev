@@ -1,0 +1,17 @@
+# James O'Sullivan
+
+James O'Sullivan is a software and mechatronics engineering student from Cork, Ireland. He is the co-founder and engineer of Heron Labs and took part in the Patch summer accelerator.
+
+## Notable work
+
+- Heron Labs / Agami: semi-autonomous vessel for river monitoring, collecting GPS-tagged nitrate, conductivity, turbidity and temperature measurements. James led electronics, embedded sensing, ESP32 firmware, LTE/GNSS telemetry, navigation, web monitoring and field testing.
+- VEX Robotics: reached a peak ranking of #1 in Europe and attended the VEX World Championship in St. Louis.
+- Other work: robotics education, assistive technology, computer vision, embedded systems, full-stack software and mathematical tutoring.
+
+## Links
+
+- Portfolio: https://jamesosullivan.space
+- LinkedIn: https://www.linkedin.com/in/jamesosullivan123
+- GitHub: https://github.com/jambrike
+- Heron Labs: https://heronlabs.ie
+- Patch: https://www.joinpatch.org/
