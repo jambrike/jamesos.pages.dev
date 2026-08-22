@@ -7,6 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : 0.7,
+    priority: path === "" ? 1 : ["/projects", "/highlights", "/mathematics"].includes(path) ? 0.9 : 0.7,
   }));
 }

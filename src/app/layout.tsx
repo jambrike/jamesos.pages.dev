@@ -21,14 +21,14 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "James O'Sullivan | Software Engineer, Heron Labs Co-Founder",
+  title: "James O'Sullivan | Heron Labs, Patch 2026 & VEX Robotics",
   description:
-    "James O'Sullivan is a Cork, Ireland software and mechatronics engineering student, co-founder of Heron Labs and Patch accelerator participant. His work includes Agami, robotics, embedded systems, computer vision and environmental monitoring.",
+    "James O'Sullivan is the Heron Labs co-founder behind Agami, a Patch 2026 participant, and a VEX Robotics competitor whose team reached #1 in Europe. He received an Irish Mathematical Olympiad 2026 Honourable Mention.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "profile",
     url: siteUrl,
-    title: "James O'Sullivan | Software Engineer, Heron Labs Co-Founder",
+    title: "James O'Sullivan | Heron Labs, Patch 2026 & VEX Robotics",
     description:
       "Robotics, embedded systems and software projects by James O'Sullivan, including Heron Labs' Agami river-monitoring vessel.",
     images: [{ url: "/profile.jpg", alt: "James O'Sullivan" }],

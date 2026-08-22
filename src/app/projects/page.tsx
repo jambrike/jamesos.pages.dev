@@ -1,4 +1,12 @@
 import Projects from "@/components/Projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Heron Labs & Agami | James O'Sullivan Projects",
+  description:
+    "Projects by James O'Sullivan, including Heron Labs' Agami: a semi-autonomous river-monitoring vessel built with embedded sensing, GPS, LTE telemetry and robotics.",
+  alternates: { canonical: "/projects" },
+};
 
 export default async function ProjectPage() {
   return (

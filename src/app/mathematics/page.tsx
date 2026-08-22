@@ -1,4 +1,12 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "James O'Sullivan | Irish Mathematical Olympiad 2026 Honourable Mention",
+  description:
+    "James O'Sullivan received an Honourable Mention in the 2026 Irish Mathematical Olympiad (IrMO) and is a UCC-certified mathematics tutor in Cork, Ireland.",
+  alternates: { canonical: "/mathematics" },
+};
 
 export default function CertificatesPage() {
   return (
