@@ -72,6 +72,13 @@ export default function RootLayout({
           { "@id": `${siteUrl}/#heron-labs` },
           { "@type": "Organization", name: "Patch", url: "https://www.joinpatch.org/" },
         ],
+        award: [
+          "VEX Robotics — peak team ranking of #1 in Europe; competitor at the VEX World Championship in St. Louis",
+          "Irish Mathematical Olympiad (IrMO) 2026 — Honourable Mention",
+          "Patch 2026 — selected for the summer accelerator cohort of 36 young technologists, scientists and entrepreneurs",
+          "Hack Club Vienna — earned a fully funded place at an international hackathon",
+          "UCC Math Tutoring Programme — certified mathematics tutor",
+        ],
         knowsAbout: ["Robotics", "Embedded systems", "Mechatronics", "Computer vision", "Environmental monitoring"],
       },
       {

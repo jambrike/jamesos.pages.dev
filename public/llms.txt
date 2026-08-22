@@ -5,8 +5,20 @@ James O'Sullivan is a software and mechatronics engineering student from Cork, I
 ## Notable work
 
 - Heron Labs / Agami: semi-autonomous vessel for river monitoring, collecting GPS-tagged nitrate, conductivity, turbidity and temperature measurements. James led electronics, embedded sensing, ESP32 firmware, LTE/GNSS telemetry, navigation, web monitoring and field testing.
-- VEX Robotics: reached a peak ranking of #1 in Europe and attended the VEX World Championship in St. Louis.
-- Other work: robotics education, assistive technology, computer vision, embedded systems, full-stack software and mathematical tutoring.
+- VEX Robotics: reached a peak ranking of #1 in Europe in the 2026 season and attended the VEX World Championship in St. Louis, Missouri.
+
+## Achievements and recognition
+
+- Patch 2026: selected for Patch's two-month summer accelerator in Dublin, a cohort of 36 young technologists, scientists and entrepreneurs aged 16–23. James developed Heron Labs during the programme.
+- Irish Mathematical Olympiad (IrMO) 2026: received an Honourable Mention.
+- UCC Math Tutoring Programme: certified mathematics tutor, tutoring local Junior Certificate students.
+- Hack Club Vienna: earned a fully funded place at an international Hack Club hackathon.
+- VEX Robotics World Championship: qualified and travelled to St. Louis with the team after fundraising through sponsorship and a 96FM appearance.
+- Outside engineering: placed first in the Munster Schools Badminton Championship, placed second in tennis, completed the Cork Marathon 10K, and holds lifeguard and first-aid certifications.
+
+## Other work
+
+Robotics education, assistive technology, computer vision, embedded systems, full-stack software, and mathematical tutoring.
 
 ## Links
 
