@@ -25,6 +25,13 @@ export const metadata: Metadata = {
   description:
     "James O'Sullivan is a Patch 2026 participant, VEX Robotics competitor whose team reached #1 in Europe, and Irish Mathematical Olympiad 2026 Honourable Mention recipient. He is a software and mechatronics engineering student from Cork, Ireland.",
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/fire-icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/fire-icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     type: "profile",
     url: siteUrl,
