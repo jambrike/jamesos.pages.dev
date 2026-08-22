@@ -28,14 +28,19 @@ function InteractiveModel({ model, name }: { model: string; name: string }) {
   return createElement("model-viewer", {
     src: model,
     "camera-controls": true,
-    "auto-rotate": true,
     "shadow-intensity": "1",
     "interaction-prompt": "none",
-    "camera-orbit": "0deg 75deg 2.5m",
-    "min-camera-orbit": "auto auto 1m",
-    "max-camera-orbit": "auto auto 5m",
+    "camera-orbit": "0deg 70deg 105%",
+    "min-camera-orbit": "auto auto 55%",
+    "max-camera-orbit": "auto auto 250%",
+    "camera-target": "auto auto auto",
     "aria-label": `${name} interactive 3D model`,
-    style: { height: "18rem", width: "100%", background: "#09090b" },
+    style: {
+      height: "24rem",
+      width: "100%",
+      background: "#09090b",
+      touchAction: "pan-y",
+    },
   });
 }
 
@@ -45,8 +50,7 @@ export function ProjectCard({ project }: Props) {
 
   return (
     <Card className={cn("flex flex-col", featured && "sm:col-span-2")}>
-      <CardHeader className={cn(video && image && "space-y-3")}>
-        {model && <InteractiveModel model={model} name={name} />}
+      <CardHeader className={cn(video && (image || model) && "space-y-3")}>
         {video && (
           <video
             className="aspect-video w-full bg-zinc-950 object-contain"
@@ -64,7 +68,8 @@ export function ProjectCard({ project }: Props) {
             Your browser does not support embedded video.
           </video>
         )}
-        {image && (
+        {model && <InteractiveModel model={model} name={name} />}
+        {image && !model && (
           <Link href={href || image}>
             <Image
               src={image}
