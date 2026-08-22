@@ -21,14 +21,14 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "James O'Sullivan | Heron Labs, Patch 2026 & VEX Robotics",
+  title: "James O'Sullivan | Patch 2026, VEX #1 Europe & Maths Olympiad",
   description:
-    "James O'Sullivan is the Heron Labs co-founder behind Agami, a Patch 2026 participant, and a VEX Robotics competitor whose team reached #1 in Europe. He received an Irish Mathematical Olympiad 2026 Honourable Mention.",
+    "James O'Sullivan is a Patch 2026 participant, VEX Robotics competitor whose team reached #1 in Europe, and Irish Mathematical Olympiad 2026 Honourable Mention recipient. He is a software and mechatronics engineering student from Cork, Ireland.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "profile",
     url: siteUrl,
-    title: "James O'Sullivan | Heron Labs, Patch 2026 & VEX Robotics",
+    title: "James O'Sullivan | Patch 2026, VEX #1 Europe & Maths Olympiad",
     description:
       "Robotics, embedded systems and software projects by James O'Sullivan, including Heron Labs' Agami river-monitoring vessel.",
     images: [{ url: "/profile.jpg", alt: "James O'Sullivan" }],
@@ -60,7 +60,7 @@ export default function RootLayout({
         url: siteUrl,
         image: `${siteUrl}/profile.jpg`,
         description:
-          "Software and mechatronics engineering student from Cork, Ireland; co-founder and engineer at Heron Labs; Patch accelerator participant.",
+          "Software and mechatronics engineering student from Cork, Ireland; Patch 2026 participant, VEX Robotics competitor and Irish Mathematical Olympiad Honourable Mention recipient.",
         jobTitle: "Co-Founder & Engineer",
         homeLocation: { "@type": "Place", name: "Cork, Ireland" },
         sameAs: [
@@ -73,9 +73,9 @@ export default function RootLayout({
           { "@type": "Organization", name: "Patch", url: "https://www.joinpatch.org/" },
         ],
         award: [
+          "Patch 2026 — selected for the summer accelerator cohort of 36 young technologists, scientists and entrepreneurs",
           "VEX Robotics — peak team ranking of #1 in Europe; competitor at the VEX World Championship in St. Louis",
           "Irish Mathematical Olympiad (IrMO) 2026 — Honourable Mention",
-          "Patch 2026 — selected for the summer accelerator cohort of 36 young technologists, scientists and entrepreneurs",
           "Hack Club Vienna — earned a fully funded place at an international hackathon",
           "UCC Math Tutoring Programme — certified mathematics tutor",
         ],

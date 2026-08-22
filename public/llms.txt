@@ -1,6 +1,6 @@
 # James O'Sullivan
 
-James O'Sullivan is a software and mechatronics engineering student from Cork, Ireland. He is the co-founder and engineer of Heron Labs and took part in the Patch summer accelerator.
+James O'Sullivan is a software and mechatronics engineering student from Cork, Ireland. He was selected for Patch 2026, competed in VEX Robotics with a peak team ranking of #1 in Europe, and received an Honourable Mention in the 2026 Irish Mathematical Olympiad (IrMO). He is also the co-founder and engineer of Heron Labs.
 
 ## Notable work
 
