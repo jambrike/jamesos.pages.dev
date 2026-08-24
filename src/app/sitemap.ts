@@ -3,10 +3,10 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://jamesosullivan.space";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "/projects", "/highlights", "/mathematics", "/contact"].map((path) => ({
+  return ["", "/projects", "/highlights", "/mathematics", "/watch/agami", "/contact"].map((path) => ({
     url: `${siteUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : ["/projects", "/highlights", "/mathematics"].includes(path) ? 0.9 : 0.7,
+    priority: path === "" ? 1 : ["/projects", "/highlights", "/mathematics", "/watch/agami"].includes(path) ? 0.9 : 0.7,
   }));
 }

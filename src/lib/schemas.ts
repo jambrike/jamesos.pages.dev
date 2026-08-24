@@ -26,6 +26,7 @@ const project = z.object({
   href: z.string().url().optional(),
   image: z.string().optional(),
   video: z.string().optional(),
+  watchUrl: z.string().startsWith("/").optional(),
   model: z.string().optional(),
   featured: z.boolean().optional(),
   tags: z.array(z.string()),

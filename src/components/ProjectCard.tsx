@@ -45,7 +45,7 @@ function InteractiveModel({ model, name }: { model: string; name: string }) {
 }
 
 export function ProjectCard({ project }: Props) {
-  const { name, href, description, image, video, model, featured, tags, links } =
+  const { name, href, description, image, video, watchUrl, model, featured, tags, links } =
     project;
 
   return (
@@ -106,6 +106,13 @@ export function ProjectCard({ project }: Props) {
         )}
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
+            {watchUrl && (
+              <Link href={watchUrl}>
+                <Badge className="flex gap-2 px-2 py-1 text-[10px]">
+                  Watch demo
+                </Badge>
+              </Link>
+            )}
             {links.toSorted().map((link, idx) => (
               <Link href={link?.href} key={idx} target="_blank">
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
